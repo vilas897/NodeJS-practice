@@ -1,0 +1,31 @@
+<!DOCTYPE = html>
+<html>
+  <head>
+    <style>
+      body{background: #239b56 ; font-family: verdana; color: #fff; padding: 30-px; }
+      h1{font-size: 40px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+      h2{font-size: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+      p{font-size: 16px; text-align: center}
+      li{font-size: 16px; }
+    </style>
+  </head>
+
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>My Contact</h1>
+    <p><strong>My Name: </strong>Vilas M</p>
+    <p><strong>Phone: </strong>8971234787</p>
+    <p><strong>Email Address: </strong>vilasnitk19@gmail.com</p>
+    <h2>Want to contact some one else?</h2>
+    <form id= "contact-form">
+      <label for="who">Who do you want to contact</br></label>
+      <input type="text" name="who" value = "<%= qs.who %>"/></br>
+      <label for="dept">Which department?</br></label>
+      <input type="text" name="dept" value = "<%= qs.dept %>"/></br>
+      <label for="email">Email Address</br></label>
+      <input type="email" name="email"/></br></br>
+      <input type="submit" value = "submit"/>
+    </form>
+    </ul>
+  </body>
+</html>
